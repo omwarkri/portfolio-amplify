@@ -44,6 +44,7 @@ pipeline {
             steps {
                 echo "Deploying Node.js App..."
                 echo "deploying node.js portfolio.."
+                echo "deploying node.js portfolio.."
                 // yahan par aap apna deploy script likh sakte ho
                 // jaise: sh './deploy.sh'
             }
