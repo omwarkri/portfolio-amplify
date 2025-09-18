@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+  "build": "next build",
+  "start": "next start",
+  "lint": "next lint",
+  "test": "echo \"Running tests...\" && jest"
   },
   "dependencies": {
     "react": "19.1.0",
