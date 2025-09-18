@@ -25,12 +25,12 @@ pipeline {
                 sh 'npm test || echo "No tests"'
             }
         }
-
         stage('Deploy') {
-            steps {
-                echo 'Deploy step building...'
-                echo 'Deployment step would go here.'
-            }
-        }
+    steps {
+        sh 'nohup npm run start -- -p 3000 &'
+        echo "Next.js app is running at http://<jenkins-ip>:3000"
+    }
+}
+
     }
 }
